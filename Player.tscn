@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ef0nvbmi11v5"]
+
+[ext_resource type="Script" uid="uid://c34t4j2hcda0u" path="res://scripts/Player.gd" id="1_p0vlq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q0qdf"]
+radius = 14.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1107712163]
+script = ExtResource("1_p0vlq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=831487759]
+shape = SubResource("CircleShape2D_q0qdf")
+
+[node name="Visual" type="ColorRect" parent="." unique_id=845046323]
+offset_right = 28.0
+offset_bottom = 28.0
+color = Color(0.08390463, 0.28075442, 0.4133781, 1)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1277187503]

@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://bn3l4f8agic8a"]
+
+[ext_resource type="Script" uid="uid://bnj73ho66a46u" path="res://scripts/ui.gd" id="1_dj8aq"]
+
+[node name="UI" type="CanvasLayer" unique_id=818840488]
+script = ExtResource("1_dj8aq")
+
+[node name="HUD" type="Control" parent="." unique_id=1698642187]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1151.0
+offset_bottom = 642.0
+
+[node name="HPLabel" type="Label" parent="HUD" unique_id=1029754275]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.08400001
+anchor_top = 0.036000002
+anchor_right = 0.08400001
+anchor_bottom = 0.036000002
+offset_left = -80.684006
+offset_top = -7.1120014
+offset_right = -40.684006
+offset_bottom = 15.887999
+theme_override_colors/font_color = Color(1, 0.8392157, 0.91764706, 1)
+
+[node name="ScoreLabel" type="Label" parent="HUD" unique_id=1759265296]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 40.0
+offset_right = -1095.0
+offset_bottom = -579.0
+theme_override_colors/font_color = Color(1, 0.8392157, 0.91764706, 1)
+
+[node name="LevelLabel" type="Label" parent="HUD" unique_id=2141124505]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 64.0
+offset_right = -1095.0
+offset_bottom = -555.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.8392157, 0.91764706, 1)
+
+[node name="TimeLabel" type="Label" parent="HUD" unique_id=825522185]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 88.0
+offset_right = 56.0
+offset_bottom = 111.0
+theme_override_colors/font_color = Color(1, 0.8392157, 0.91764706, 1)
+
+[node name="StreakLabel" type="Label" parent="HUD" unique_id=1667193652]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 112.0
+offset_right = 56.0
+offset_bottom = 135.0
+theme_override_colors/font_color = Color(1, 0.8392157, 0.91764706, 1)
+
+[node name="UpgradePanel" type="Control" parent="." unique_id=1282517335]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="UpgradePanel" unique_id=846264598]
+process_mode = 3
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 0.30980393, 0.6392157, 1)
+
+[node name="OptionsContainer" type="VBoxContainer" parent="UpgradePanel" unique_id=2116822090]
+process_mode = 3
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Option1" type="Button" parent="UpgradePanel/OptionsContainer" unique_id=1142251086]
+process_mode = 3
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.30980393, 0.6392157, 1)
+
+[node name="Option2" type="Button" parent="UpgradePanel/OptionsContainer" unique_id=1085426360]
+process_mode = 3
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.30980393, 0.6392157, 1)
+
+[node name="Option3" type="Button" parent="UpgradePanel/OptionsContainer" unique_id=1406496214]
+process_mode = 3
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.30980393, 0.6392157, 1)
+
+[node name="DeathPanel" type="Control" parent="." unique_id=835655378]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_left = 505.0
+offset_top = 32.0
+offset_right = 700.0
+offset_bottom = 59.0
+
+[node name="ResultLabel" type="Label" parent="DeathPanel" unique_id=1245101764]
+process_mode = 3
+layout_mode = 0
+offset_left = 947.0
+offset_top = 32.0
+offset_right = 1113.0
+offset_bottom = 78.0
+
+[node name="AgainButton" type="Button" parent="DeathPanel" unique_id=593606518]
+process_mode = 3
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="MenuButton" type="Button" parent="DeathPanel" unique_id=1521166362]
+process_mode = 3
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0

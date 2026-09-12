@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dx40db8i6m28"]
+
+[ext_resource type="Script" uid="uid://bqpt4a2jtwgqq" path="res://scripts/Projectile.gd" id="1_dprbf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q0qdf"]
+
+[node name="Projectile" type="Area2D" unique_id=531732095]
+script = ExtResource("1_dprbf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=21419927]
+shape = SubResource("CircleShape2D_q0qdf")
+
+[node name="Visual" type="Polygon2D" parent="." unique_id=248532964]
+color = Color(2.117753e-06, 0.8884955, 0.890018, 1)
